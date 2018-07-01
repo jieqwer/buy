@@ -1,0 +1,160 @@
+.er{
+    width: 82px;
+    height: 62px;
+    background: rgba(255,255,255,1);
+    display: none;
+    position: absolute;
+    border-radius:0 0 8px 8px;
+    border: 1px solid rgba(255,194,41,0.3);
+    box-shadow: 0px 4px 20px 0px rgba(255,194,41,0.5);
+    border-top: none;
+}
+.tui{
+    color: #a45364;;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    font-size: 14px;
+}
+.tui:hover{
+    color: #FFC229;
+}
+.er:hover{
+    display: block;
+}
+.tui:hover+ul{
+    display: block;
+}
+.er li{
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+}
+.er li a{
+    cursor: pointer;
+    color: #999;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+    width: 80px;
+    transition: all 0.5s linear;
+    font-size: 14px;
+}
+.er li a:hover{
+    color: #ffc229;
+
+}
+
+
+
+@media (max-width: 768px){
+
+    .er {
+        width: 82px;
+        height: 62px;
+        background: rgba(255,255,255,1);
+        display: none;
+        position: absolute;
+        border-radius: 0 8px 8px 0;
+        border: 1px solid rgba(255,194,41,0.3);
+        box-shadow: 0px 4px 20px 0px rgba(255,194,41,0.5);
+        border-left: none;
+        margin-top: -40px;
+        margin-left: 50px;
+    }
+}
+
+.yan{
+    color: orangered;
+}
+
+.top{
+    margin-top: 20px;
+}
+.left1{
+    margin-left: 30px;
+}
+.left2{
+    margin-left: 20px;
+}
+.float1{
+    float: left;
+}
+.he1{
+    height: 100px;
+}
+.very{
+    width: 154px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    overflow: hidden;
+    margin: 29px 20px 0;
+}
+#jan,#jia{
+    width: 43px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-style: normal;
+    cursor: pointer;
+    float: left;
+}
+#jan{
+    background: #f0f0f0;
+}
+#num{
+    width: 66px;
+    text-align: center;
+    height: 30px;
+    margin-top: 2px;
+    border: none;
+    outline: none;
+    float: left;
+}
+
+.color{
+    border: 2px solid #fb5400;
+}
+
+#nums li{
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+
+.huidao{
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 40px;
+    height:80px;
+
+}
+.huidao .toop{
+    width: 40px;
+    height: 40px;
+    background: #d8703f;
+    cursor: pointer;
+}
+.huidao .toop span{
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url("../images/jiantou1.png")no-repeat;
+    margin: 0 auto;
+}
+
+.huidao .boot{
+    width: 40px;
+    height: 40px;
+    background: #d8703f;
+    cursor: pointer;
+}
+.huidao .boot span{
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url("../images/jiantou2.png")no-repeat;
+    margin: 0 auto;
+}

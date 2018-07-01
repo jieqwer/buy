@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layDate快速使用</title>
+    <link rel="stylesheet" href="css/layui.css" media="all">
+</head>
+<body>
+<div class="layui-form">
+    <div class="layui-form-item">
+        <div class="layui-inline"> <!-- 注意：这一层元素并不是必须的 -->
+            <label class="layui-form-label">请选择日期</label>
+            <div class="layui-input-inline">
+            <input type="text" class="layui-input" id="test5" placeholder="yyyy-MM-dd HH:mm:ss">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-form">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label class="layui-form-label">请选择日期时间</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input" id="test56" placeholder="yyyy年MM月dd日">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layui-collapse" lay-accordion="">
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">文豪</h2>
+        <div class="layui-colla-content layui-show">
+
+            <div class="layui-collapse" lay-accordion="">
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">唐代</h2>
+                    <div class="layui-colla-content layui-show">
+
+                        <div class="layui-collapse" lay-accordion="">
+                            <div class="layui-colla-item">
+                                <h2 class="layui-colla-title">杜甫</h2>
+                                <div class="layui-colla-content layui-show">
+                                    伟大的诗人
+                                </div>
+                            </div>
+                            <div class="layui-colla-item">
+                                <h2 class="layui-colla-title">李白</h2>
+                                <div class="layui-colla-content">
+                                    <p>据说是韩国人</p>
+                                </div>
+                            </div>
+                            <div class="layui-colla-item">
+                                <h2 class="layui-colla-title">王勃</h2>
+                                <div class="layui-colla-content">
+                                    <p>千古绝唱《滕王阁序》</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">宋代</h2>
+                    <div class="layui-colla-content">
+                        <p>比如苏轼、李清照</p>
+                    </div>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">当代</h2>
+                    <div class="layui-colla-content">
+                        <p>比如贤心</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">科学家</h2>
+        <div class="layui-colla-content">
+            <p>伟大的科学家</p>
+        </div>
+    </div>
+    <div class="layui-colla-item">
+        <h2 class="layui-colla-title">艺术家</h2>
+        <div class="layui-colla-content">
+            <p>浑身散发着艺术细胞</p>
+        </div>
+    </div>
+</div>
+
+<script src="layui.js"></script>
+<script>
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#test1' //指定元素
+        });
+
+        //日期时间选择器
+        laydate.render({
+            elem: '#test5'
+            ,type: 'datetime'
+        });
+        laydate.render({
+            elem: '#test56'
+            ,type: 'datetime'
+        });
+    });
+
+
+    layui.use(['element', 'layer'], function(){
+        var element = layui.element;
+        var layer = layui.layer;
+
+        //监听折叠
+        element.on('collapse(test)', function(data){
+            layer.msg('展开状态：'+ data.show);
+        });
+    });
+
+</script>
+</body>
+</html>
