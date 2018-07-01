@@ -132,6 +132,7 @@ if(isset($_SESSION['username'])){
     </div>
 
     <script type="text/javascript" src="../../layui/layui.js"></script>
+   <script type="text/javascript" src="allUsers.js"></script>
     <script>
         $(function () {
             $("#jiao a:nth-of-type(<?php echo $page+1 ?>)").css({"background":"#009688","color":"white"});
