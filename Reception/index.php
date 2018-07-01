@@ -430,7 +430,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <h2><a href="index.php">Best Phone<span>shop anywhere</span></a></h2>
         </div>
         <div class="copy-right animated wow slideInUp" data-wow-delay=".5s">
-            <p>Copyright &copy; 2018.Best Phone</p>
+            <p>Copyright &copy; 2018.Best Phone<a href='../layui-admin/index.php'>后台管理</a></p>
         </div>
     </div>
 </div>
